@@ -21,20 +21,6 @@ export function SectionHeader({ index, title, subtitle }: SectionHeaderProps) {
       className="mb-16 flex flex-col gap-8 md:mb-24 md:flex-row md:items-end md:justify-between"
     >
       <div className="flex flex-col gap-4">
-        <motion.div variants={headerReveal} className="flex items-center gap-4">
-          <span className="font-mono text-[10px] tracking-widest text-primary font-bold uppercase">
-             {String(index).padStart(2, "0")}
-          </span>
-          <motion.div 
-            variants={lineReveal} 
-            className="h-[1px] w-8 bg-primary/30 origin-left" 
-            aria-hidden="true"
-          />
-          <span className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase italic">
-             Archive_00{index}
-          </span>
-        </motion.div>
-        
         <motion.h2 
           variants={characterContainer}
           className="flex flex-wrap text-3xl font-medium tracking-tight text-foreground sm:text-4xl lg:text-5xl"

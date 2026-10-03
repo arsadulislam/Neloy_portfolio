@@ -18,6 +18,18 @@ const terminalLines = [
   { type: "output", text: ">> Security monitoring: ACTIVE" },
   { type: "output", text: ">> All systems operational_" },
 ]
+/*const terminalLines = [
+  { type: "command", text: "const engineer = {" },
+  { type: "output", text: "  name: 'Neloy'," },
+  { type: "output", text: "  focus: 'Network & Infrastructure Engineering'," },
+  { type: "output", text: "  skills: ['MikroTik', 'VLAN Design', 'Zabbix', 'Azure AD', 'Wazuh']," },
+  { type: "output", text: "  growing: ['Cloud', 'Server Administration']," },
+  { type: "output", text: "  available: true," },
+  { type: "output", text: "  motto: \"Design it secure. Keep it running.\"" },
+  { type: "output", text: "};" },
+  { type: "blank", text: "" },
+  { type: "output", text: "engineer.deploy();_" },
+];*/
 
 export function TerminalCard() {
   const [visibleLines, setVisibleLines] = useState(0)

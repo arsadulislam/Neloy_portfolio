@@ -140,16 +140,6 @@ function CertificateCard({ cert, index, expanded, isMobile }: { cert: typeof cer
         <span className="font-mono text-[10px] text-muted-foreground">
           {cert.date}
         </span>
-        <div className="flex gap-1">
-          {cert.modes.map((mode) => (
-            <span
-              key={mode}
-              className="rounded-sm border border-border px-1.5 py-0.5 font-mono text-[9px] text-muted-foreground"
-            >
-              {mode}
-            </span>
-          ))}
-        </div>
       </div>
       </div>
     </motion.div>

@@ -104,16 +104,25 @@ export function SkillsSection({ index }: SkillsSectionProps) {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
           className="grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
-          {skillCategories.map((category) => (
-            <SkillCard key={category.label} category={category} isMobile={isMobile} />
-          ))}
+          {skillCategories.map((category, index) => {
+            const isLastOddItem = skillCategories.length % 3 !== 0 && index === skillCategories.length - 1
+
+            return (
+              <SkillCard
+                key={category.label}
+                category={category}
+                isMobile={isMobile}
+                shouldSpanLastRow={isLastOddItem}
+              />
+            )
+          })}
         </motion.div>
       </div>
     </section>
   )
 }
 
-function SkillCard({ category, isMobile }: { category: typeof skillCategories[number], isMobile: boolean }) {
+function SkillCard({ category, isMobile, shouldSpanLastRow }: { category: typeof skillCategories[number], isMobile: boolean, shouldSpanLastRow?: boolean }) {
   const ref = useRef(null)
   const isAutoActive = useAutoHighlight(ref, isMobile)
   const [isHovered, setIsHovered] = useState(false)
@@ -125,7 +134,7 @@ function SkillCard({ category, isMobile }: { category: typeof skillCategories[nu
       variants={cinematicReveal}
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
-      className={`relative h-full bg-background lg:hover:z-10 ${isActive ? "z-10" : "z-0"}`}
+      className={`relative h-full bg-background md:col-span-1 lg:hover:z-10 ${shouldSpanLastRow ? "md:col-span-2 lg:col-span-2" : ""} ${isActive ? "z-10" : "z-0"}`}
     >
       {/* The Inner Card: Handles the 3D lift, shadow, and background color */}
       <div className={`group flex flex-col h-full gap-5 p-4 md:p-6 lg:p-8 transition-all duration-500 ease-out lg:hover:bg-card lg:hover:-translate-y-1.5 lg:hover:shadow-xl lg:hover:shadow-primary/10 ${isActive

@@ -67,7 +67,7 @@ export function HeroBento({ index }: HeroBentoProps) {
             >
               <TextBlurIn as={motion.span} className="inline-block">Hello, I am</TextBlurIn>
               <br />
-              <span className="text-primary">Arsadul Islam Neloy.</span>
+              <span className="text-primary">Arsadul Islam Neloy</span>
             </h1>
             <TextBlurIn className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
               {content.description}

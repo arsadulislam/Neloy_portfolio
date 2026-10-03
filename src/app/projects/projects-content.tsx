@@ -30,8 +30,8 @@ export function ProjectsPageContent() {
         {/* HUD Navigation */}
         <div className="mb-12">
           <PremiumBackButton 
-            href="/" 
-            text="Return to Dashboard" 
+            href="/#projects" 
+            text="Return to Projects" 
             autoHover={isAtTop}
             isVisible={!isNavHubOpen}
           />

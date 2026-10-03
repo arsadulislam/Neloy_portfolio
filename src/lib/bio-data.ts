@@ -41,26 +41,6 @@ export interface Certificate {
   modes: string[]
 }
 
-const legacyHeroContent: HeroContent= {
-  generalist: {
-    title: "Engineer",
-    description: "Merging Full Stack Engineering with AI Research to create production-grade solutions."
-  },
-  fullstack: {
-    title: "Full Stack Developer",
-    description: "Architecting robust full-stack applications and high-performance APIs from frontend to database."
-  },
-  "ai-ml": {
-    title: "Machine Learning Engineer",
-    description: "Developing intelligent systems, predictive models, and optimizing neural networks for real-world applications."
-  },
-  data: {
-    title: "Data Engineer",
-    description: "Engineering distributed data pipelines, enterprise web scrapers, and processing millions of records with 99.9% uptime."
-  }
-}
-
-
 
 const legacyEducation: Education[] = [
 
@@ -88,7 +68,7 @@ export const HeroContent: HeroContent = {
 export const aboutContent: AboutContent = {
   generalist: [
     "I am Arsadul Islam, known professionally as Neloy, an IT Support and Network Engineer from Bangladesh with more than three years of experience in IT support, networking, infrastructure management, troubleshooting, and system administration.",
-    "My work spans MikroTik, Active Directory, Windows Server, Linux, network security, monitoring, and day-to-day IT operations. I enjoy turning difficult technical problems into stable, understandable systems that people can rely on.",
+    "My work spans MikroTik Routers, Active Directory, Windows Server, Linux Systems, network security, monitoring, and day-to-day IT operations. I enjoy turning difficult technical problems into stable, understandable systems that people can rely on.",
     "I am currently deepening my skills in DevOps, cybersecurity, automation, and infrastructure monitoring through practical labs involving Docker, GitHub Actions, Wazuh, Zabbix, and Python."
   ],
 };
