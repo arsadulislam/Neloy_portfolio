@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 95%;
+    --foreground: 40 40% 10%;
+    --card: 40 25% 97%;
+    --card-foreground: 40 40% 12%;
+    --popover: 40 25% 97%;
+    --popover-foreground: 40 40% 12%;
+    --primary: 217 91% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 20% 88%;
+    --secondary-foreground: 40 40% 15%;
+    --muted: 40 15% 86%;
+    --muted-foreground: 40 20% 40%;
+    --accent: 217 91% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 20% 82%;
+    --input: 40 20% 82%;
+    --ring: 217 91% 54%;
+    --radius: 0.375rem;
+    --sidebar-background: 40 20% 93%;
+    --sidebar-foreground: 40 40% 15%;
+    --sidebar-primary: 217 91% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 20% 88%;
+    --sidebar-accent-foreground: 40 40% 15%;
+    --sidebar-border: 40 20% 82%;
+    --sidebar-ring: 217 91% 54%;
+  }
+
+  .dark {
+    --background: 40 10% 3%;
+    --foreground: 40 15% 88%;
+    --card: 40 10% 5%;
+    --card-foreground: 40 15% 88%;
+    --popover: 40 10% 5%;
+    --popover-foreground: 40 15% 88%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 10% 8%;
+    --secondary-foreground: 40 15% 90%;
+    --muted: 40 5% 10%;
+    --muted-foreground: 40 10% 55%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 10% 12%;
+    --input: 40 10% 12%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 40 10% 4%;
+    --sidebar-foreground: 40 15% 88%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 10% 8%;
+    --sidebar-accent-foreground: 40 15% 90%;
+    --sidebar-border: 40 10% 12%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .glass-premium-bg {
+    @apply bg-white/70 backdrop-blur-xl dark:bg-card/40;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground relative;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(var(--primary) / 0.08) 0, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(var(--primary) / 0.08) 0, transparent 50%);
+  }
+
+  /* High-end custom selection */
+  ::selection {
+    background-color: hsla(var(--primary) / 0.15);
+    color: hsl(var(--primary));
+    text-shadow: 0 0 8px hsla(var(--primary) / 0.2);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 999;
+  outline: 100vmax solid transparent;
+}
+
+/* ─── Accessibility Overrides ─────────────────────────────── */
+
+/* Smooth transition for text size changes */
+/* Prevents browser's native anchor jump from shifting the root UI shell */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  transition: font-size 0.3s ease;
+}
+
+/* High Contrast: force muted-foreground to match foreground */
+html.a11y-high-contrast {
+  --muted-foreground: var(--foreground);
+}
+
+/* Large Text: bump base font from 16px → 18px */
+html.a11y-large-text {
+  font-size: 18px;
+}
