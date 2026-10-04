@@ -1,6 +1,6 @@
 # Context-Aware Portfolio
 
-A high-performance, polymorphic personal website built with **Next.js 14**. This platform features a custom "Mode Switcher" that dynamically recontextualizes the entire UI—filtering bio, skills, and projects to match a specific domain of interest (Generalist, Full Stack, AI/ML, or Data).
+A high-performance personal portfolio built with Next.js, focused on Cybersecurity, Network Security, and IT Infrastructure. The platform showcases hands-on experience across security monitoring, system administration, networking, and infrastructure technologies, with projects featuring tools such as Wazuh and Zabbix. It is designed to present technical skills, projects, experience, certifications, and professional interests through a modern, interactive interface
 
 ## Tech Stack
 
@@ -13,7 +13,7 @@ A high-performance, polymorphic personal website built with **Next.js 14**. This
 
 ## Key Features
 
-- **Context Switching:** A global state management system that filters content based on user intent (`Generalist` | `Full Stack` | `AI / ML` | `Data`).
+- **Context Switching:** A global state management system that filters content based on user intent (`Network Engineer` | `Cloud` | `Server Administratior` | `Security`).
 - **Data-First Architecture:** Content is decoupled from UI components, managed via structured data files (`src/lib/bio-data.ts`).
 - **Terminal Aesthetic:** A clean, developer-centric design inspired by modern IDEs and obsidian tools.
 - **Fully Responsive:** Optimized layouts for mobile, tablet, and desktop.
@@ -22,7 +22,7 @@ A high-performance, polymorphic personal website built with **Next.js 14**. This
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Viraj-Mavani/portfolio.git
+   git@github.com:arsadulislam/Neloy_portfolio.git
    cd portfolio
    ```
 
@@ -51,4 +51,4 @@ Open http://localhost:3000 with your browser to see the result.
 ```
 
 ## License
-MIT © 2026 Viraj Mavani
+BD © 2026 Arsadul Islam
