@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion"
 import { steps } from "framer-motion"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Facebook, Github, Linkedin, Mail } from "lucide-react"
 import { MagneticButton } from "../blocks/magnetic-button"
 
 export const socialLinks = [
   { icon: Github, label: "GitHub", href: "https://github.com/arsadulislam", color: "hover:text-white hover:bg-[#24292e] hover:border-[#24292e]" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/helloiamneloy/", color: "hover:text-white hover:bg-[#0077b5] hover:border-[#0077b5]" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/helloiamneloy", color: "hover:text-white hover:bg-[#1877F2] hover:border-[#1877F2]" },
   { icon: Mail, label: "Email", href: "mailto:arsadulislam.neloy@gmail.com", color: "hover:text-white hover:bg-[#EA4335] hover:border-[#EA4335]" },
 ]
 

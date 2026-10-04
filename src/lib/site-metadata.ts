@@ -10,6 +10,7 @@ export const SITE_METADATA = {
 	social: {
 		github: "https://github.com/arsadulislam",
 		linkedin: "#",
+		facebook: "https://www.facebook.com/helloiamneloy",
 		twitter: "#",
 		instagram: "#",
 	},

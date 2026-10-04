@@ -4,6 +4,7 @@ import { useCallback, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { MenuToggle } from "./menu-toggle"
 import { MenuOverlay } from "./menu-overlay"
 import { useScrollLock } from "@/hooks/use-scroll-lock"
@@ -14,6 +15,18 @@ import { useNavigationHub } from "@/contexts/navigation-hub-context"
 export function Navigation() {
   const { isOpen, setIsOpen, toggleOpen } = useNavigationHub()
   const { selectedProject } = useProjectModal()
+  const pathname = usePathname()
+
+  const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    setIsOpen(false)
+
+    if (pathname !== "/") return
+
+    event.preventDefault()
+    const viewport = document.querySelector<HTMLElement>("[data-radix-scroll-area-viewport]")
+    viewport?.scrollTo({ top: 0, behavior: "smooth" })
+    window.history.replaceState(null, "", "/#home")
+  }
 
   // ... (useScrollLock) ...
 
@@ -77,8 +90,8 @@ export function Navigation() {
             className={isOpen ? "pointer-events-none" : ""}
           >
             <Link 
-              href="/" 
-              onClick={() => setIsOpen(false)}
+              href="/#home" 
+              onClick={handleLogoClick}
               className="group flex items-center gap-3 rounded-md border border-border bg-card/80 px-3 py-2 md:px-4 md:py-2 backdrop-blur-xl hover:border-primary/50 transition-all"
             >
               <div className="relative h-6 w-6 md:h-7 md:w-7">

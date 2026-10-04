@@ -21,8 +21,8 @@ const intro = {
   title: "I'm Neloy, an IT Support and Network Engineer who believes reliable systems begin with disciplined learning.",
   paragraphs: [
     "My journey is rooted in practical IT operations: supporting users, troubleshooting systems, maintaining networks, and learning how infrastructure behaves under real-world pressure. Over more than three years, I have worked across IT support, networking, infrastructure management, and system administration.",
-    "I work with MikroTik, Active Directory, Windows Server, Linux, DNS, DHCP, monitoring, and security operations. I value clear diagnostics, careful documentation, and solutions that are stable enough for the people and businesses depending on them.",
-    "My next chapter focuses on Cloud Infrastructure, Security, Automation, and Infrastructure Building. Through hands-on projects with Wazuh, Zabbix, GitHub Actions, Linux, Docker, and Python, I am developing secure, automated, and scalable infrastructure solutions while continuously expanding my technical expertise.."
+    "I work with MikroTik Routers, Active Directory, Windows Server, Linux Systems, DNS, DHCP, monitoring, and security operations. I value clear diagnostics, careful documentation, and solutions that are stable enough for the people and businesses depending on them.",
+    "My next chapter focuses on Cloud Infrastructure, Security Systems, Automation, and Infrastructure Building. Through hands-on projects with Wazuh, Zabbix, GitHub Actions, Linux Systems, Docker, and Python, I am developing secure, automated, and scalable infrastructure solutions while continuously expanding my technical expertise.."
   ]
 }
 

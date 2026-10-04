@@ -16,6 +16,7 @@ const terminalLines = [
   { type: "output", text: ">> Checking infrastructure..." },
   { type: "output", text: ">> Network status: ONLINE" },
   { type: "output", text: ">> Security monitoring: ACTIVE" },
+  { type: "status", text: "Network ok Cloud ok Security ok" },
   { type: "output", text: ">> All systems operational_" },
 ]
 /*const terminalLines = [
@@ -42,7 +43,7 @@ export function TerminalCard() {
         }
         return prev + 1
       })
-    }, 300)
+    }, 650)
     return () => clearInterval(interval)
   }, [])
 
@@ -82,7 +83,16 @@ export function TerminalCard() {
         <pre className="font-mono text-[11.5px] lg:text-xs leading-relaxed">
           {terminalLines.slice(0, visibleLines).map((line, i) => (
             <div key={`${line.text}-${i}`} className={`${getLineColor(line.type)} transition-opacity duration-200`}>
-              {line.text || "\u00A0"}
+              {line.type === "status" ? (
+                <>
+                  <span className="text-sky-400">Network</span>{" "}
+                  <span className="text-emerald-400">ok</span>{"  "}
+                  <span className="text-sky-400">Cloud</span>{" "}
+                  <span className="text-emerald-400">ok</span>{"  "}
+                  <span className="text-sky-400">Security</span>{" "}
+                  <span className="text-emerald-400">ok</span>
+                </>
+              ) : line.text || "\u00A0"}
             </div>
           ))}
           <span className="inline-block h-3.5 w-1.5 animate-pulse bg-primary" aria-hidden="true" />

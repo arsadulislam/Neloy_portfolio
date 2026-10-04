@@ -61,7 +61,7 @@ export const HeroContent: HeroContent = {
   },
   devops: {
     title: "DevOps & Security Engineer",
-    description: "Growing into DevOps, cybersecurity, automation, and infrastructure monitoring with Docker, CI/CD, Bash, Python, Wazuh, and Zabbix."
+    description: "Growing into DevOps, cybersecurity, automation, and infrastructure monitoring with Docker, CI/CD, Python, Wazuh, and Zabbix."
   }
 }
 
@@ -96,7 +96,7 @@ export const skillCategories: SkillCategory[] = [
   { label: "Networking", skills: ["MikroTik", "TCP/IP", "VLAN", "LAN/WAN", "Routing", "Switching", "OLT", "ONU"] },
   { label: "System Administration", skills: ["Windows Server", "Active Directory", "Linux", "DNS", "DHCP"] },
   { label: "Monitoring & Security", skills: ["Wazuh", "Zabbix", "Network Security", "Log Monitoring"] },
-  { label: "DevOps", skills: ["Docker", "Git", "GitHub Actions", "CI/CD", "Bash", "Python"] },
+  { label: "DevOps", skills: ["Docker", "Git", "GitHub Actions", "CI/CD", "Python"] },
   { label: "IT Support", skills: ["Hardware Troubleshooting", "Software Troubleshooting", "ERP Support", "IT Asset Management"] },
 ]
 

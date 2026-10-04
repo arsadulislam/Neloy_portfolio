@@ -300,7 +300,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                 {/* Socials */}
                 <div>
                   <span className="mb-4 block font-mono text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
-                    04. Network
+                    03. Network
                   </span>
                   <div className="flex flex-wrap gap-3">
                     {socialLinks.map((social, i) => {
@@ -308,7 +308,7 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                       const brandStyles: Record<string, string> = {
                         GitHub: "text-white bg-[#24292e] border-[#24292e]",
                         LinkedIn: "text-white bg-[#0077b5] border-[#0077b5]",
-                        Discord: "text-white bg-[#5865F2] border-[#5865F2]",
+                        Facebook: "text-white bg-[#1877F2] border-[#1877F2]",
                         Email: "text-white bg-[#EA4335] border-[#EA4335]"
                       }
 
