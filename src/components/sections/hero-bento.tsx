@@ -89,7 +89,7 @@ export function HeroBento({ index }: HeroBentoProps) {
         </GlowCard>
 
         {/* Card 2 - Terminal (Tall, Right, spans 2 rows) */}
-        <GlowCard as={motion.div} variants={cinematicReveal} className="hidden md:flex flex-col md:col-span-1 min-h-[425px] md:min-h-[440px] md:row-span-2 relative group rounded-md border border-border bg-card/40 backdrop-blur-md overflow-hidden" >
+        <GlowCard as={motion.div} variants={cinematicReveal} className="flex flex-col min-h-[360px] md:col-span-1 md:min-h-[440px] md:row-span-2 relative group rounded-md border border-border bg-card/40 backdrop-blur-md overflow-hidden" >
           <div className="absolute top-3 right-4 z-20 hidden lg:block">
             <DecorativeTag>&gt; Active Shell</DecorativeTag>
           </div>
