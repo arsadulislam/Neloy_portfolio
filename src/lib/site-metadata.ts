@@ -5,7 +5,7 @@ export const SITE_METADATA = {
 		"IT Support and Network Engineer from Bangladesh with 3+ years of experience in networking, infrastructure, system administration, troubleshooting, DevOps, and cybersecurity.",
 	siteUrl: "https://github.com/arsadulislam",
 	logo: "/neloy_icon.svg",
-	favicon: "/neloy_icon.svg",
+	favicon: "/neloy_favicon.svg",
 	keywords: ["Arsadul Islam", "Neloy", "IT Support Engineer", "Network Engineer", "System Administration", "Cybersecurity"],
 	social: {
 		github: "https://github.com/arsadulislam",

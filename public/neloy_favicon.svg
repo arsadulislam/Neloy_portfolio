@@ -1,0 +1,7 @@
+<svg viewBox="250 20 180 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Neloy favicon</title>
+  <desc id="desc">A blue rounded square with a white letter N and an amber dot.</desc>
+  <rect x="270" y="40" width="140" height="140" rx="32" fill="#185FA5"/>
+  <path d="M311 143 L311 77 L369 143 L369 77" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="369" cy="77" r="10" fill="#EF9F27"/>
+</svg>
